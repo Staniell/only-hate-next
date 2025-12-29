@@ -12,7 +12,7 @@ export function SupportSection() {
         </p>
 
         <a
-          href="https://ko-fi.com/onlyhate"
+          href="https://ko-fi.com/staniellg"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF5E5B] hover:bg-[#ff4642] text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-[0_0_20px_-5px_rgba(255,94,91,0.5)]"
