@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "OnlyHate | Filter the Noise",
   description:
     "A Chrome Extension that hides positive comments and shows you only the hate. See the worst, ignore the rest.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export const dynamic = "force-static";
