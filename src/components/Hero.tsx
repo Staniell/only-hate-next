@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, EyeOff } from "lucide-react";
 
 export function Hero() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black selection:bg-red-900 selection:text-white">
       {/* Background Gradient */}
@@ -47,16 +54,21 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2 group shadow-[0_0_40px_-10px_rgba(220,38,38,0.5)]">
+          <a
+            href="https://chromewebstore.google.com/detail/onlyhate/bmokokjcebimehcfeingjocnhooigfle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold text-lg transition-all flex items-center justify-center gap-2 group shadow-[0_0_40px_-10px_rgba(220,38,38,0.5)]"
+          >
             Add to Chrome
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <a
-            href="#how-it-works"
-            className="px-8 py-4 bg-neutral-900 hover:bg-neutral-800 text-white border border-neutral-800 rounded-lg font-bold text-lg transition-all flex items-center justify-center"
+          </a>
+          <button
+            onClick={() => scrollToSection("how-it-works")}
+            className="px-8 py-4 bg-neutral-900 hover:bg-neutral-800 text-white border border-neutral-800 rounded-lg font-bold text-lg transition-all flex items-center justify-center cursor-pointer"
           >
             See How It Works
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>
