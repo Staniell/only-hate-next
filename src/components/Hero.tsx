@@ -31,7 +31,7 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          className="text-6xl md:text-8xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400"
+          className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
@@ -69,6 +69,27 @@ export function Hero() {
           >
             See How It Works
           </button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-12"
+        >
+          <a
+            href="https://www.producthunt.com/products/onlyhate?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-onlyhate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1056288&theme=light&t=1767302459959"
+              alt="OnlyHate - Filter out toxic positivity from social comments | Product Hunt"
+              width="250"
+              height="54"
+              className="w-[250px] h-[54px] transition-all hover:scale-105 duration-200"
+            />
+          </a>
         </motion.div>
       </div>
     </section>

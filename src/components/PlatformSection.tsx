@@ -4,7 +4,7 @@ export function PlatformSection() {
       <div className="container px-4 md:px-6 mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-16">Supported Platforms</h2>
 
-        <div className="flex flex-wrap justify-center gap-12 md:gap-20">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-20">
           {/* YouTube - Active */}
           <div className="flex flex-col items-center gap-6 group">
             <div className="w-24 h-24 rounded-3xl bg-red-600 flex items-center justify-center shadow-[0_0_30px_-5px_rgba(220,38,38,0.5)] transform group-hover:scale-110 transition-transform duration-300">
